@@ -1,6 +1,7 @@
 body {
+    background: url("./resources/images/pattern-hills.svg") no-repeat left bottom, url("./resources/images/bg-stars.svg") no-repeat top;
     background-color: hsl(235, 16%, 14%);
-    background-repeat: no-repeat;
+    background-size: contain;
     font-family: "Red Hat Text", monospace;
     font-size: 14px;
     letter-spacing: 5px;
@@ -16,10 +17,6 @@ a {
 img {
     pointer-events: none;
     user-select: none;
-}
-
-svg:hover path{
-    fill: hsl(345, 95%, 68%);
 }
 
 /* Classes */
@@ -56,7 +53,11 @@ svg:hover path{
     position: absolute;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 100vw;
+}
+
+.social_icon:hover svg path {
+    fill: hsl(345, 95%, 68%);
 }
 
 /* Ids */
