@@ -1,0 +1,33 @@
+:root {
+
+}
+
+body {
+    background-color: hsl(235, 16%, 14%);
+    background-repeat: no-repeat;
+    font-family: "Red Hat Text", monospace;
+    font-size: 14px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Classes */
+
+.increment {
+    color: hsl(237, 18%, 59%);
+}
+
+.title {
+    color: white;
+}
+
+.background_image {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
