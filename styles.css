@@ -14,11 +14,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    pointer-events: none;
-    user-select: none;
-}
-
 /* Classes */
 
 .increment {
@@ -27,6 +22,7 @@ img {
 
 .title {
     color: white;
+    transform: translateY();
 }
 
 .flex_column {
@@ -39,21 +35,37 @@ img {
     flex-direction: row;
 }
 
+.time_holder {
+    gap: 20px;
+}
+
 .flipper {
-    width: 15vw;
-    background: hsl(236, 21%, 26%);
+    display: flex;
+    width: 8vmax;
+    height: 8vmax;
+    min-width: 80px;
+    min-height: 80px;
+    background: linear-gradient(180deg, rgba(44,44,68,255) 50%, hsl(236, 21%, 26%) 50%);
+    filter: drop-shadow(0 .8vw 0 hsl(234, 17%, 12%));
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
-.spacer {
-    gap: 10px;
+.flipper:hover {
+    /* transform: translateY(50%); */
+    transform: translate3d(0,-1px,0);
 }
 
-.background_image {
-    position: absolute;
-    padding: 0;
-    margin: 0;
-    width: 100vw;
+.flipper_text {
+    font-weight: bold;
+    letter-spacing: 0px;
+    font-size: 6.25rem;
+    font-family: "Red Hat Text", sans-serif;
+    background: -webkit-linear-gradient(90deg, hsl(345, 95%, 68%) 50%, rgba(211,80,114,255) 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .social_icon:hover svg path {
@@ -63,12 +75,16 @@ img {
 /* Ids */
 
 #main_content {
+    margin: 0;
+    padding: 0;
     text-align: center;
     height: 100vh;
 }
 
 #card_div {
     align-self: center;
+    margin-top: auto;
+    gap: 20px;
 }
 
 #social_div {
