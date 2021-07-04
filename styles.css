@@ -158,6 +158,10 @@ a {
 }
 
 @media screen and (max-width: 1000px) {
+    body {
+        background-size: cover;
+    }
+
     .card {
         font-size: 36px;
         width: 80px;
