@@ -23,12 +23,6 @@ a {
     color: hsl(237, 18%, 59%);
 }
 
-.title {
-    color: white;
-    font-size: 22px;
-    transform: translateY();
-}
-
 .flex_column {
     display: flex;
     flex-direction: column;
@@ -139,22 +133,52 @@ a {
     margin: 0;
     padding: 0;
     text-align: center;
-    height: 100vh;
+}
+
+#title {
+    color: white;
+    font-size: 24px;
+    
 }
 
 #card_div {
-    align-self: center;
-    margin-top: auto;
     gap: 42px;
 }
 
 #social_div {
-    margin-top: auto;
-    padding-bottom: 112px;
-    align-self: center;
-    justify-content: space-evenly;
-    justify-self: flex-end;
     gap: 42px;
+}
+
+.main {
+    height: 100vh;
+}
+
+.main,
+.top,
+.mid,
+.bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    justify-content: space-between;
+}
+
+.top,
+.bottom {
+    height: 33vh;
+}
+
+.top,
+.mid {
+    justify-content: center;
+}
+
+.bottom {
+    justify-content: flex-end;
+    padding-bottom: 2rem;
 }
 
 @media screen and (max-width: 1000px) {
