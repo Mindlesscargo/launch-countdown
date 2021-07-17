@@ -1,15 +1,11 @@
 const launchDate = '10/1/2021'
 
 window.onload = function () {
-    const days = document.getElementById('days')
-    const hours = document.getElementById('hours')
-    const minutes = document.getElementById('minutes')
-    const seconds = document.getElementById('seconds')
     let timeObjects = {
-        seconds,
-        minutes,
-        hours,
-        days
+        seconds: document.getElementById('seconds'),
+        minutes: document.getElementById('minutes'),
+        hours: document.getElementById('hours'),
+        days: document.getElementById('days')
     }
     const x = setInterval(updateClock, 1000)
 
@@ -26,7 +22,7 @@ window.onload = function () {
 
     function getTimeRemaining(){
         const total = Date.parse(launchDate) - Date.parse(new Date());
-        
+
         return {
           days: Math.floor(total/(1000*60*60*24)),
           hours: Math.floor((total/(1000*60*60)) % 24),
