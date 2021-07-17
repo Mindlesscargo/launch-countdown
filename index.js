@@ -26,17 +26,12 @@ window.onload = function () {
 
     function getTimeRemaining(){
         const total = Date.parse(launchDate) - Date.parse(new Date());
-        const seconds = Math.floor( (total/1000) % 60 );
-        const minutes = Math.floor( (total/1000/60) % 60 );
-        const hours = Math.floor( (total/(1000*60*60)) % 24 );
-        const days = Math.floor( total/(1000*60*60*24) );
-      
+        
         return {
-          total,
-          days,
-          hours,
-          minutes,
-          seconds
+          days: Math.floor(total/(1000*60*60*24)),
+          hours: Math.floor((total/(1000*60*60)) % 24),
+          minutes: Math.floor((total/1000/60) % 60),
+          seconds: Math.floor((total/1000) % 60)
         };
     }
 
