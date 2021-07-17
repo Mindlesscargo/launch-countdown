@@ -1,7 +1,12 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
-    background: url("./resources/images/pattern-hills.svg") no-repeat left bottom, url("./resources/images/bg-stars.svg") no-repeat top;
-    background-color: hsl(235, 16%, 14%);
-    background-size: 100vw 25vh, 100% 100%;
+    background: url("./resources/images/pattern-hills.svg") no-repeat left bottom, url("./resources/images/bg-stars.svg") no-repeat top, linear-gradient(180deg, hsl(235, 16%, 14%) 0%, #251d2c 100%);
+    background-size: 100vw 25vh, 100% 100%, 100% 100%;
     font-family: "Red Hat Text", monospace;
     font-size: 14px;
     letter-spacing: 12px;
@@ -181,11 +186,11 @@ a {
     padding-bottom: 2rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-device-width: 800px) {
     .card {
         font-size: 36px;
-        width: 80px;
-        height: 68px;
+        width: 70px;
+        height: 60px;
     }
 
     .increment {
@@ -202,6 +207,6 @@ a {
     }
 
     #card_div {
-        gap: 15px;
+        gap: 10px;
     }
 }
