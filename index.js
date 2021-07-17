@@ -16,7 +16,6 @@ window.onload = function () {
     function updateClock() {
         let timeReamining = getTimeRemaining()
         Object.keys(timeObjects).every((e) => {
-            console.log(true)
             if (parseInt(timeObjects[e].querySelector('#topFallbackText').innerText) != timeReamining[e]) {
                 updateFlap(timeObjects[e], timeReamining[e])
                 return true;
