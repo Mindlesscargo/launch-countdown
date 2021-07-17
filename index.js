@@ -10,10 +10,10 @@ window.onload = function () {
     const x = setInterval(updateClock, 1000)
 
     function updateClock() {
-        let timeReamining = getTimeRemaining()
+        let timeRemaining = getTimeRemaining()
         Object.keys(timeObjects).every((e) => {
-            if (parseInt(timeObjects[e].querySelector('#topFallbackText').innerText) != timeReamining[e]) {
-                updateFlap(timeObjects[e], timeReamining[e])
+            if (parseInt(timeObjects[e].querySelector('#topFallbackText').innerText) != timeRemaining[e]) {
+                updateFlap(timeObjects[e], timeRemaining[e])
                 return true;
             }
             return false;
