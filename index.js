@@ -29,7 +29,6 @@ window.onload = function () {
             increment.querySelector('.flipper').classList.remove('flip')
             increment.querySelector('#bottomFallbackText').innerText = value
         }, 350)
-        clearTimeout(timeout)
     }
 
     function getTimeRemaining(){
