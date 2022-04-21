@@ -1,4 +1,4 @@
-const launchDate = '01/01/2023'
+const launchDate = '05/02/22'
 
 window.onload = function () {
     const timeObjects = {
